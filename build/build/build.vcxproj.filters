@@ -13,24 +13,48 @@
     <Filter Include="App\Source">
       <UniqueIdentifier>{eb767066-8ce6-44fc-be52-6a62be789bf4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Engine\Include">
+      <UniqueIdentifier>{54fc3d77-70f1-4964-ad4c-ba9d8fd01eff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Source">
+      <UniqueIdentifier>{091756ee-4dac-4301-a01a-b50333ffb7cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Include\Window">
+      <UniqueIdentifier>{de823b0d-d5fb-42b3-a8ed-54faf77e647f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Source\Window">
+      <UniqueIdentifier>{a0d144ce-8e9d-4294-94fb-feb3327e6634}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Include\Graphics">
+      <UniqueIdentifier>{ea861148-9f53-4b6b-b8cf-bd8e5771eee6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Source\Graphics">
+      <UniqueIdentifier>{cf2d7751-9c1c-446e-a215-46023f879255}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\source\Engine\Window.cpp">
-      <Filter>Engine</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\source\main.cpp">
       <Filter>App\Source</Filter>
     </ClCompile>
     <ClCompile Include="..\..\source\App\AppWindow.cpp">
       <Filter>App\Source</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\source\Engine\Window.cpp">
+      <Filter>Engine\Source\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\Engine\GraphicsEngine.cpp">
+      <Filter>Engine\Source\Graphics</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\source\Engine\Window.h">
-      <Filter>Engine</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\source\App\AppWindow.h">
       <Filter>App\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\Engine\Window.h">
+      <Filter>Engine\Include\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\Engine\GraphicsEngine.h">
+      <Filter>Engine\Include\Graphics</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

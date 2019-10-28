@@ -20,11 +20,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\source\App\AppWindow.cpp" />
+    <ClCompile Include="..\..\source\Engine\GraphicsEngine.cpp" />
     <ClCompile Include="..\..\source\Engine\Window.cpp" />
     <ClCompile Include="..\..\source\main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\source\App\AppWindow.h" />
+    <ClInclude Include="..\..\source\Engine\GraphicsEngine.h" />
     <ClInclude Include="..\..\source\Engine\Window.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -121,6 +123,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EntryPointSymbol>
       </EntryPointSymbol>
+      <AdditionalDependencies>d3d11.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -159,6 +162,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d11.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

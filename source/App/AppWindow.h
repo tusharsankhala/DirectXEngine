@@ -1,12 +1,14 @@
 #pragma once
 
 #include "../Engine/Window.h"
+#include "../Engine/GraphicsEngine.h"
 
 class AppWindow : public Window
 {
 public:
 
 	AppWindow() = default;
+	~AppWindow();
 
 	// Inherited via Window
 	virtual void OnCreate() override;
